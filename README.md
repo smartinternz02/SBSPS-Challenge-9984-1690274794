@@ -5,4 +5,4 @@ It is the required FLASK web Application.<br>
 while viewing the analysis,dashboard,stories part it will ask for the login.<br>
 LOGIN DETAILS:<br>
 ibmcognoshack@gmail.com<br>
-pass:
+pass:Ibmcognoshack30
