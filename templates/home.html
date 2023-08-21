@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("{{ url_for('static', filename='bg.jpg') }}");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  header {
+    background-color: #ff8a65;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  nav {
+    background-color: #66bb6a;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  nav a:hover {
+    color: #f0f0f0;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .section-title {
+    font-size: 28px;
+    color: #ff7043;
+    margin-bottom: 20px;
+  }
+
+  .section-content {
+    color: #555;
+    line-height: 1.6;
+  }
+  .back-button {
+      float: left;
+    }
+</style>
+</head>
+<body>
+  <header>
+    <button class="back-button" onclick="goBack()"> Back</button>
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+    <h1>HOME</h1>
+  </header>
+  <div class="container">
+    <section id="home">
+      <h2 class="section-title">Description</h2>
+      <p class="section-content">The popularity of Korean dramas (KDramas) has soared globally, and in 2023, the market is flooded with numerous productions. Here we have leverage the power of Cognos, an analytics platform, to analyze the top 100 KDramas of 2023 and generate actionable insights that can guide decision-making and strategy formulation for stakeholders in the KDrama industry.</p>
+    </div>
+    <div class="container">
+        <section id="home">
+          <h2 class="section-title">Solution</h2>
+          <p class="section-content">The Objective here is to leverage the capabilities of the Cognos analytics platform to gather, integrate, and analyze data on the top 100 KDramas of 2023. By utilizing Cognos' advanced analytics and reporting features, stakeholders in the KDrama industry can gain actionable insights to guide their decision-making processes, improve content creation strategies, optimize monetization models, and enhance audience engagement and satisfaction.</p>
+        </div>
+    <div class="container">
+        <section id="home">
+          <h2 class="section-title">Technologies & Tools</h2>
+          <p class="section-content">IBM Cognos,Python, web Framework like flask or Django</p>
+        </div>
+</body>
+</html>

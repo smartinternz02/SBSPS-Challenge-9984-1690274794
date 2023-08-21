@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboards</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("{{ url_for('static', filename='bg.jpg') }}");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  header {
+    background-color: #ff8a65;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  nav {
+    background-color: #66bb6a;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  nav a:hover {
+    color: #f0f0f0;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .section-title {
+    font-size: 28px;
+    color: #ff7043;
+    margin-bottom: 20px;
+  }
+
+  .section-content {
+    color: #555;
+    line-height: 1.6;
+  }
+  .back-button {
+      float: left;
+    }
+</style>
+</head>
+<body>
+  <header>
+    <button class="back-button" onclick="goBack()"> Back</button>
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+    <h1>DASHROARDS</h1>
+  </header>
+  <div class="container">
+    <section id="home">
+      <h2 class="section-title">Day_aried Dashboard</h2>
+      <p class="section-content"><iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FDashboard1&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a0de67b4e_00000000" width="1200" height="800" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe></p>
+    </div>
+    <div class="container">
+      <section id="home">
+        <h2 class="section-title">Score Dropdown</h2>
+        <p class="section-content"><iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FDashoard2&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a0e7ab551_00000002" width="1200" height="800" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe></p>
+      </div>
+      <div class="container">
+        <section id="home">
+          <h2 class="section-title">ID</h2>
+          <p class="section-content"><iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FDashboard3&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a118cb10a_00000000" width="1200" height="800" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe></p>
+        </div>
+</body> 
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stories</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("{{ url_for('static', filename='bg.jpg') }}"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  header {
+    background-color: #ff8a65;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  nav {
+    background-color: #66bb6a;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  nav a:hover {
+    color: #f0f0f0;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .section-title {
+    font-size: 28px;
+    color: #ff7043;
+    margin-bottom: 20px;
+  }
+
+  .section-content {
+    color: #555;
+    line-height: 1.6;
+  }
+  .back-button {
+      float: left;
+    }
+</style>
+</head>
+<body>
+  <header>
+    <button class="back-button" onclick="goBack()"> Back</button>
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+    <h1>STORIES</h1>
+  </header>
+  <div class="container">
+    <section id="home">
+      <h2 class="section-title">Story-1</h2>
+      <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=story&amp;pathRef=.my_folders%2FKDS1&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;sceneId=-2&amp;sceneTime=0" width="1200" height="800" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+    </div>
+  <div class="container">
+    <section id="home">
+      <h2 class="section-title">Story-2</h2>
+      <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=story&amp;pathRef=.my_folders%2FKDS2&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;sceneId=-1&amp;sceneTime=0" width="1200" height="800" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+      </div>
+</body>
+</html>

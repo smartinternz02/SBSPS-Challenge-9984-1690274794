@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Analysis</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("{{ url_for('static', filename='bg.jpg') }}"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  header {
+    background-color: #ff8a65;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  nav {
+    background-color: #66bb6a;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  nav a:hover {
+    color: #f0f0f0;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .section-title {
+    font-size: 28px;
+    color: #ff7043;
+    margin-bottom: 20px;
+  }
+
+  .section-content {
+    color: #555;
+    line-height: 1.6;
+  }
+  .back-button {
+      float: left;
+    }
+</style>
+</head>
+<body>
+  <header>
+    <button class="back-button" onclick="goBack()"> Back</button>
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+    <h1>ANALYSIS</h1>
+  </header>
+  <div class="container">
+    <section id="home">
+      <h2 class="section-title">Main Role Analysis</h2>
+      <p class="section-content"><iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=explore&amp;pathRef=.my_folders%2FMain%2BRole&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;subView=model0000018a11aea099_00000003" width="1200" height="800" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe></p>
+  </div>
+  <div class="container">
+    <section id="home">
+      <h2 class="section-title">Genere Analysis</h2>
+      <p class="section-content"><iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=explore&amp;pathRef=.my_folders%2FGenere&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;subView=model0000018a1882da53_00000004" width="1200" height="800" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe></p>
+    </div>
+  <div class="container">
+    <section id="home">
+      <h2 class="section-title">Watchers Analysis</h2>
+      <p class="section-content"><iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=explore&amp;pathRef=.my_folders%2FWatchers&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;subView=model0000018a18476c43_00000004" width="1200" height="800" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe></p>
+  </div>
+  <div class="container">
+    <section id="home">
+      <h2 class="section-title">Popularity Analysis</h2>
+      <p class="section-content"><iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=explore&amp;pathRef=.my_folders%2Fpopularity&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;subView=model0000018a18586ada_00000004" width="1200" height="800" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe></p>
+  </div>
+  <div class="container">
+    <section id="home">
+      <h2 class="section-title">Score Analysis</h2>
+      <p class="section-content"><iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=explore&amp;pathRef=.my_folders%2FScore&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;subView=model0000018a18741b75_00000004" width="1200" height="800" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe></p>
+  </div>
+  <div class="container">
+    <section id="home">
+      <h2 class="section-title">Episode Analysis</h2>
+      <p class="section-content"><iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=explore&amp;pathRef=.my_folders%2FEpsodes&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;subView=model0000018a187ca74c_00000004" width="1200" height="800" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe></p>
+  </div>
+</body> 
+</html>

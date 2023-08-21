@@ -1,0 +1,1686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Table</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #66bb6a;
+    color: white;
+    margin: 0;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    background-color: white;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+  }
+
+  th {
+    background-color: #ff7043;
+    color: white;
+    font-weight: bold;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  .back-button {
+      float: left;
+    }
+</style>
+</head>
+<button class="back-button" onclick="goBack()"> Back</button>
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+<body>
+  <h1>Top 100 KDrama</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Genre</th>
+        <th>Tags</th>
+        <th>Rank</th>
+        <th>Popularity</th>
+        <th>Score</th>
+        <th>Episodes</th>
+        <th>Duration</th>
+        <th>Watchers</th>
+        <th>start_date</th>
+        <th>end_date</th>
+        <th>Day_aired</th>
+        <th>Main role</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Repeat the following row structure for each row -->
+      <tr>
+         <td>1</td>
+         <td>Move to Heaven</td>
+         <td>Life, Drama</td>
+         <td>Uncle-Nephew Relationship, Autism, Death, Savant Syndrome, Mourning,</td>
+         <td>8</td>
+         <td>94</td>
+         <td>9.2</td>
+         <td>10</td>
+         <td>52</td>
+         <td>64103</td>
+         <td>5/14/2021</td>
+         <td>-</td>
+         <td>Friday</td>
+         <td>Lee Je Hoon, Tang Jun Sang, Hong Seung Hee</td>
+       </tr>
+      <tr>
+         <td>2</td>
+         <td>Weak Hero Class 1</td>
+         <td>Action, Youth, Drama</td>
+         <td>Smart Male Lead, Bromance, School Bullying, Violence, Friendship, High School, Skilled Fighter, Adapted From A Webtoon, School Setting, Fight</td>
+         <td>12</td>
+         <td>290</td>
+         <td>9.1</td>
+         <td>8</td>
+         <td>40</td>
+         <td>32415</td>
+         <td>11/18/2022</td>
+         <td>-</td>
+         <td>Friday</td>
+         <td>Park Ji Hoon, Hong Kyung, Choi Hyun Wook, Kim Su Gyeom</td>
+       </tr>
+       <tr>
+         <td>3</td>
+         <td>Hospital Playlist Season 2</td>
+         <td>Romance, Life, Drama, Medical</td>
+         <td>Multiple Mains, Band, Music, Strong Female Lead, Multiple Couples, Comedy, Smart Female Lead, Bromance, Cardiovascular Disease, Workplace Setting</td>
+         <td>14</td>
+         <td>177</td>
+         <td>9.1</td>
+         <td>12</td>
+         <td>100</td>
+         <td>43574</td>
+         <td>6/17/2021</td>
+         <td>9/16/2021</td>
+         <td>Thursday</td>
+         <td>Jo Jung Suk, Jung Kyung Ho, Jeon Mi Do, Yoo Yeon Seok, Kim Dae Myung</td>
+       </tr>
+       <tr>
+         <td>4</td>
+         <td>Flower of Evil</td>
+         <td>Thriller, Romance, Crime, Melodrama</td>
+         <td>Deception, Family Secret, Mystery, Suspense, Smart Female Lead, Hidden Personality, Antisocial Personality Disorder, Investigation, Murder, Hidden Identity</td>
+         <td>16</td>
+         <td>31</td>
+         <td>9.1</td>
+         <td>16</td>
+         <td>70</td>
+         <td>98411</td>
+         <td>2020-07-29</td>
+         <td>2020-09-23</td>
+         <td>Wednesday, Thursday</td>
+         <td>Lee Joon Gi, Jang Hee Jin, Moon Chae Won, Seo Hyun Woo</td>
+       </tr>
+       <tr>
+         <td>5</td>
+         <td>Hospital Playlist</td>
+         <td>Romance, Life, Drama, Medical</td>
+         <td>Nice Male Lead, Multiple Mains, Slow Romance, Multiple Couples, Strong Female</td>
+         <td>17</td>
+         <td>51</td>
+         <td>9.1</td>
+         <td>12</td>
+         <td>90</td>
+         <td>81568</td>
+         <td>03-12-2020</td>
+         <td>5/28/2020</td>
+         <td>Thursday</td>
+         <td>Jo Jung Suk, Jung Kyung Ho, Jeon Mi Do, Yoo Yeon Seok, Kim Dae Myung</td>
+       </tr>
+       <tr>
+         <td>6</td>
+         <td>Alchemy of Souls</td>
+         <td>Action, Historical, Romance, Fantasy</td>
+         <td>Transmigration, Strong Female Lead, Master-Disciple Relationship, Kind Male Lead, Multiple Mains, Supernatural, Magical Power, Hidden Identity, Body Swap, Elemental Power</td>
+         <td>21</td>
+         <td>42</td>
+         <td>9.1</td>
+         <td>20</td>
+         <td>95</td>
+         <td>85986</td>
+         <td>11-06-2015</td>
+         <td>1/16/2016</td>
+         <td>Friday, Saturday</td>
+         <td>Lee Jae Wook, Hwang Min Hyun, Yoo Joon Sang, Jung So Min, Shin Seung Ho, Oh Na Ra</td>
+       </tr>
+       <tr>
+         <td>7</td>
+         <td>Reply 1988</td>
+         <td>Comedy, Romance, Life, Youth</td>
+         <td>Nostalgia, Multiple Couples, Poor Family, Love Triangle, Heartfelt, High School, Friendship, Mother-Son Relationship, Coming Of Age, Bromance </td>
+         <td>21</td>
+         <td>42</td>
+         <td>9.1</td>
+         <td>20</td>
+         <td>95</td>
+         <td>85986</td>
+         <td>11-06-2015</td>
+         <td>1/16/2016</td>
+         <td>Friday, Saturday</td>
+         <td>Lee Hye Ri, Ryu Joon Yeol, Lee Dong Hwi, Go Kyung Pyo, Park Bo Gum</td>
+       </tr>
+       <tr>
+         <td>8</td>
+         <td>My Mister</td>
+         <td>Psychological, Life, Drama</td>
+         <td>Nice Male Lead, Depression, Healing, Poor Female Lead, Strong Female Lead, Infidelity, Lying, Power Struggle, Deception, Grandma-Granddaughter Relationship</td>
+         <td>26</td>
+         <td>104</td>
+         <td>9</td>
+         <td>16</td>
+         <td>77</td>
+         <td>60644</td>
+         <td>2018-03-21</td>
+         <td>2018-05-17</td>
+         <td>Wednesday, Thursday</td>
+         <td>Lee Sun Kyun, IU</td>
+       </tr>
+       <tr>
+         <td>9</td>
+         <td>The Glory Part 2</td>
+         <td>Thriller, Drama, Melodrama</td>
+         <td>Strong Female Lead, Revenge, Suspense, Brief Nudity, Badass Female Lead, Graphic Violence, Hardworking Female Lead, Slight Romance, Scheme, Noir </td>
+         <td>27</td>
+         <td>573</td>
+         <td>9</td>
+         <td>8</td>
+         <td>55</td>
+         <td>19698</td>
+         <td>03-10-2023</td>
+         <td>-</td>
+         <td>Friday</td>
+         <td>Song Hye Kyo, Im Ji Yeon, Park Sung Hoon, Lee Do Hyun, Yeom Hye Ran, Jung Sung I</td>
+       </tr>
+       <tr>
+         <td>10</td>
+         <td>Under the Queen's Umbrella</td>
+         <td>Historical, Comedy, Drama, Political</td>
+         <td>Motherhood, Mother-Son Relationship, Palace Setting, Black Comedy, Queen Female Lead, Joseon Dynasty, Royal Family, Royalty, Historical Fiction, Prince Supporting Character</td>
+         <td>32</td>
+         <td>621</td>
+         <td>9</td>
+         <td>16</td>
+         <td>70</td>
+         <td>18516</td>
+         <td>10/15/2022</td>
+         <td>12-04-2022</td>
+         <td>Saturday, Sunday</td>
+         <td>Kim Hye Soo, Choi Won Young, Moon Sang Min, Chani, Kim Hae Sook, Kim Eui Sung, Ok Ja Yeon</td>
+       </tr>
+       <tr>
+         <td>11</td>
+         <td>Prison Playbook</td>
+         <td>Comedy, Crime, Life, Drama</td>
+         <td>Life Lesson, Bromance, Wrongfully Accused, Strong Male Lead, Slight Romance, Character Development, Murder, Prison Setting, Black Comedy, Baseball</td>
+         <td>40</td>
+         <td>88</td>
+         <td>9</td>
+         <td>16</td>
+         <td>92</td>
+         <td>65379</td>
+         <td>11/22/2017</td>
+         <td>1/18/2018</td>
+         <td>Wednesday, Thursday</td>
+         <td>Park Hae Soo, Jung Kyung Ho</td>
+       </tr>
+       <td>12</td>
+       <td>Mr. Queen</td>
+       <td>Historical, Comedy, Romance, Fantasy</td>
+       <td>Transmigration, Sassy Female Lead, Joseon Dynasty, Smart Male Lead, Calm Male Lead, Time Travel, Eccentric Female Lead, Gender Swap, Identity Crisis, Power Struggle</td>
+       <td>43</td>
+       <td>86</td>
+       <td>9</td>
+       <td>20</td>
+       <td>75</td>
+       <td>66296</td>
+       <td>12-12-2020</td>
+       <td>2/14/2021</td>
+       <td>Saturday, Sunday</td>
+       <td>Shin Hye Sun, Kim Jung Hyun</td>
+     </tr>
+       <tr>
+         <td>13</td>
+         <td>Alchemy of Souls Season 2: Light and Shadow</td>
+         <td>Action, Historical, Romance, Fantasy</td>
+         <td>Magical Power, Strong Male Lead, Birth Secret, Marriage Of Convenience, Smart Male Lead, Nice Male Lead, Transmigration, Fantasy World, Supernatural, Antihero Male Lea</td>
+         <td>44</td>
+         <td>281</td>
+         <td>9</td>
+         <td>10</td>
+         <td>81</td>
+         <td>33116</td>
+         <td>12-10-2022</td>
+         <td>01-08-2023</td>
+         <td>Saturday, Sunday</td>
+         <td>Lee Jae Wook, Hwang Min Hyun, Yoo Joon Sang, Go Youn Jung, Shin Seung Ho, Oh Na Ra</td>
+       </tr>
+       <tr>
+         <td>14</td>
+         <td>Mother</td>
+         <td>Thriller, Mystery, Psychological, Melodrama</td>
+         <td>Mother-Daughter Relationship, Independent Female Lead, Smart Female Lead, Child Abuse</td>
+         <td>45</td>
+         <td>340</td>
+         <td>9</td>
+         <td>16</td>
+         <td>63</td>
+         <td>28984</td>
+         <td>1/24/2018</td>
+         <td>3/15/2018</td>
+         <td>Wednesday, Thursday</td>
+         <td>Lee Bo Young, Lee Hye Young, Heo Yool</td>
+       </tr>
+       <tr>
+         <td>15</td>
+         <td>Extraordinary Attorney Woo</td>
+         <td>Law, Romance, Life, Drama</td>
+         <td>Autistic Female Lead, Autism, Attorney Female Lead, Smart Female Lead</td>
+         <td>49</td>
+         <td>75</td>
+         <td>9</td>
+         <td>16</td>
+         <td>77</td>
+         <td>7127</td>
+         <td>6/29/2022</td>
+         <td>8/18/2022</td>
+         <td>Wednesday, Thursday</td>
+         <td>Park Eun Bin, Kang Ki Young, Kang Tae Oh</td>
+       </tr>
+       <tr>
+         <td>16</td>
+         <td>Crash Landing on You</td>
+         <td>Military, Comedy, Romance, Political</td>
+         <td>North And South Korea, Strong Male Lead, Rich Female Lead, Nice Male Lead, Fate, Calm Male Lead</td>
+         <td>50</td>
+         <td>8</td>
+         <td>9</td>
+         <td>16</td>
+         <td>85</td>
+         <td>146358</td>
+         <td>12/14/2019</td>
+         <td>2/16/2020</td>
+         <td>Sunday, Saturday</td>
+         <td>Hyun Bin, Seo Ji Hye, Son Ye Jin, Kim Jung Hyun</td>
+       </tr>
+       <tr>
+         <td>17</td>
+         <td>Navillera </td>
+         <td>Life, Drama</td>
+         <td>Ballet, Life Lesson, Unusual Friendship, Adapted From A Webtoon</td>
+         <td>55</td>
+         <td>242</td>
+         <td>9</td>
+         <td>12</td>
+         <td>65</td>
+         <td>36739</td>
+         <td>3/22/2021</td>
+         <td>4/27/2021</td>
+         <td>Monday, Tuesday</td>
+         <td>Park In Hwan, Song Kang</td>
+       </tr>
+       <tr>
+         <td>18</td>
+         <td>Vincenzo </td>
+         <td>Comedy, Law, Crime, Drama</td>
+         <td>Revenge, Mafia, Eccentric Female Lead, Smart Male Lead, Slight Romance, Injustice, Bromance</td>
+         <td>58</td>
+         <td>18</td>
+         <td>9</td>
+         <td>20</td>
+         <td>85</td>
+         <td>113443</td>
+         <td>2/20/2021</td>
+         <td>05-02-2021</td>
+         <td>Saturday, Sunday</td>
+         <td>Song Joong Ki, Ok Taec Yeon, Jeon Yeo Been</td>
+       </tr>
+       <tr>
+         <td>19</td>
+         <td>It's Okay to Not Be Okay </td>
+         <td>Psychological, Comedy, Romance, Drama</td>
+         <td>Possessive Female Lead, Independent Female Lead, Successful Female Lead, Melodrama</td>
+         <td>60</td>
+         <td>7</td>
+         <td>8.9</td>
+         <td>16</td>
+         <td>75</td>
+         <td>150712</td>
+         <td>6/20/2020</td>
+         <td>08-09-2020</td>
+         <td>Saturday, Sunday</td>
+         <td>Kim Soo Hyun, Oh Jung Se, Seo Yea Ji</td>
+       </tr>
+       <tr>
+         <td>20</td>
+         <td>Signal </td>
+         <td>Thriller, Mystery, Sci-Fi</td>
+         <td>Different Timelines, Butterfly Effect, Murder, Hwaseong Serial Murders, Suspense, Investigation, Death, Tragic Past, Corruption, Time Altering</td>
+         <td>62</td>
+         <td>79</td>
+         <td>8.9</td>
+         <td>16</td>
+         <td>75</td>
+         <td>70090</td>
+         <td>1/22/2016</td>
+         <td>03-12-2016</td>
+         <td>Friday, Saturday</td>
+         <td>Lee Je Hoon, Jo Jin Woong, Kim Hye Soo</td>
+       </tr>
+       <tr>
+         <td>21</td>
+         <td>The Glory </td>
+         <td>Thriller, Drama, Melodrama</td>
+         <td>Revenge, School Bullying, School Violence, Strong Female Lead, Antiheroine Female Lead</td>
+         <td>68</td>
+         <td>202</td>
+         <td>8.9</td>
+         <td>8</td>
+         <td>50</td>
+         <td>40456</td>
+         <td>12/30/2022</td>
+         <td>-</td>
+         <td>Friday</td>
+         <td>Song Hye Kyo, Im Ji Yeon, Park Sung Hoon, Lee Do Hyun, Yeom Hye Ran, Jung Sung Il</td>
+       </tr>
+       <tr>
+         <td>22</td>
+         <td>Kingdom Season 2 </td>
+         <td>Lee Je Hoon, Jo Jin Woong, Kim Hye Soo</td>
+         <td>Zombies, Corruption, Strong Male Lead, Gore, Strong Female Lead, Power Struggle</td>
+         <td>70</td>
+         <td>249</td>
+         <td>8.9</td>
+         <td>6</td>
+         <td>45</td>
+         <td>36037</td>
+         <td>3/13/2020</td>
+         <td>-</td>
+         <td>Friday</td>
+         <td>Joo Ji Hoon, Kim Sung Gyu, Bae Doo Na</td>
+       </tr>
+       <tr>
+         <td>23</td>
+         <td>Happiness </td>
+         <td>Action, Thriller, Drama, Sci-Fi</td>
+         <td>Disease, Strong Female Lead, Virus, Slow Burn Romance, Survival, Smart Male Lead</td>
+         <td>72</td>
+         <td>110</td>
+         <td>8.9</td>
+         <td>12</td>
+         <td>65</td>
+         <td>58,696</td>
+         <td>11/5/2021</td>
+         <td>12/11/2021</td>
+         <td>Friday, Saturday</td>
+         <td>Han Hyo Joo, Jo Woo Jin, Park Hyung Sik</td>
+       </tr>
+       <tr>
+         <td>24</td>
+         <td>Mr. Sunshine </td>
+         <td>Military, Historical, Romance, Melodrama</td>
+         <td>Strong Male Lead, Independent Female Lead, Strong Female Lead</td>
+         <td>74</td>
+         <td>101</td>
+         <td>8.9</td>
+         <td>24</td>
+         <td>80</td>
+         <td>61,076</td>
+         <td>7/7/2018</td>
+         <td>9/30/2018</td>
+         <td>Saturday, Sunday</td>
+         <td>Lee Byung Hun, Yoo Yeon Seok, Kim Min Jung, Kim Tae Ri, Byun Yo Han</td>
+       </tr>
+       <tr>
+         <td>25</td>
+         <td>Tomorrow </td>
+         <td>Action, Thriller, Drama, Fantasy</td>
+         <td>Grim Reaper Female Lead, Grim Reaper Male Lead, Underworld, Attempted Suicide</td>
+         <td>90</td>
+         <td>114</td>
+         <td>8.9</td>
+         <td>16</td>
+         <td>60</td>
+         <td>57,931</td>
+         <td>4/1/2022</td>
+         <td>5/21/2022</td>
+         <td>Friday, Saturday</td>
+         <td>Kim Hee Sun, Lee Soo Hyuk, Rowoon, Yun Ji On</td>
+       </tr>
+       <tr>
+         <td>26</td>
+         <td>Healer</td>
+         <td>Action, Thriller, Mystery, Romance</td>
+         <td>Double Identity, Hidden Identity, Smart Male Lead, Strong Male Lead</td>
+         <td>91</td>
+         <td>14</td>
+         <td>8.9</td>
+         <td>20</td>
+         <td>60</td>
+         <td>125,028</td>
+         <td>12/8/2014</td>
+         <td>2/10/2015</td>
+         <td>Monday, Tuesday</td>
+         <td>Ji Chang Wook, Yoo Ji Tae, Park Min Young</td>
+       </tr>
+       <tr>
+         <td>27</td>
+         <td>SKY Castle </td>
+         <td>Mystery, Psychological, Drama</td>
+         <td>Family Secret, Social Commentary, Family Pressure, Satire, Multiple Mains</td>
+         <td>92</td>
+         <td>102</td>
+         <td>8.9</td>
+         <td>20</td>
+         <td>75</td>
+         <td>60,782</td>
+         <td>11/23/2018</td>
+         <td>2/1/2019</td>
+         <td>Friday, Saturday</td>
+         <td>Yeom Jung Ah, Yoon Se Ah, Kim Seo Hyung, Lee Tae Ran, Oh Na Ra</td>
+       </tr>
+       <tr>
+         <td>28</td>
+         <td>The Red Sleeve </td>
+         <td>Historical, Romance, Drama, Melodrama</td>
+         <td>Noble Man/Common Woman, Death, Tearjerker, Joseon Dynasty, Strong Male Lead</td>
+         <td>101</td>
+         <td>295</td>
+         <td>8.8</td>
+         <td>17</td>
+         <td>80</td>
+         <td>31,967</td>
+         <td>11/12/2021</td>
+         <td>1/1/2022</td>
+         <td>Friday, Saturday</td>
+         <td>Lee Jun Ho, Kang Hoon, Lee Se Young</td>
+       </tr>
+       <tr>
+         <td>29</td>
+         <td>Mouse </td>
+         <td>Thriller, Mystery, Psychological, Sci-Fi</td>
+         <td>Murder, Investigation, Character Development, Dark Fiction, Suspense, Flashback</td>
+         <td>103</td>
+         <td>165</td>
+         <td>8.8</td>
+         <td>20</td>
+         <td>75</td>
+         <td>45,809</td>
+         <td>3/3/2021</td>
+         <td>5/19/2021</td>
+         <td>Wednesday, Thursday</td>
+         <td>Lee Seung Gi, Park Ju Hyun, Lee Hee Joon, Kyung Soo Jin</td>
+       </tr>
+       <tr>
+         <td>30</td>
+         <td>Stranger </td>
+         <td>Thriller, Mystery, Law, Drama</td>
+         <td>Suspense, Investigation, Corruption, Crime Solving Duo, Murder, Calm Male Lead</td>
+         <td>105</td>
+         <td>146</td>
+         <td>8.8</td>
+         <td>16</td>
+         <td>70</td>
+         <td>49,189</td>
+         <td>10-Jun-17</td>
+         <td>7/30/2017</td>
+         <td>Saturday, Sunday</td>
+         <td>Cho Seung Woo, Lee Joon Hyuk, Shin Hye Sun, Bae Doo Na, Yoo Jae Myung</td>
+       </tr>
+       <tr>
+         <td>31</td>
+         <td>Twenty-Five Twenty-One </td>
+         <td>Romance, Life, Drama, Melodrama</td>
+         <td>Coming Of Age, Nostalgia, Fencing, Nice Male Lead, Friendship, Character</td>
+         <td>108</td>
+         <td>91</td>
+         <td>8.8</td>
+         <td>16</td>
+         <td>75</td>
+         <td>65,148</td>
+         <td>2/12/2022</td>
+         <td>4/3/2022</td>
+         <td>Saturday, Sunday</td>
+         <td>Kim Tae Ri, Bona, Lee Joo Myung, Nam Joo Hyuk, Choi Hyun Wook</td>
+       </tr>
+       <tr>
+         <td>32</td>
+         <td>The Uncanny Counter </td>
+         <td>Action, Mystery, Drama, Supernatural</td>
+         <td>Special Power, Righteous Male Lead, Evil Spirit, Strong Female Lead</td>
+         <td>109</td>
+         <td>80</td>
+         <td>8.8</td>
+         <td>16</td>
+         <td>70</td>
+         <td>68,841</td>
+         <td>11/28/2020</td>
+         <td>1/24/2021</td>
+         <td>Saturday, Sunday</td>
+         <td>Cho Byeong Kyu, Kim Se Jeong, Ahn Suk Hwan, Yoo Joon Sang, Yeom Hye Ran</td>
+       </tr>
+       <tr>
+         <td>33</td>
+         <td>Goblin </td>
+         <td>Comedy, Romance, Fantasy, Melodrama</td>
+         <td>Supernatural, Older Man/Younger Woman, Interspecies Romance</td>
+         <td>111</td>
+         <td>1</td>
+         <td>8.8</td>
+         <td>16</td>
+         <td>82</td>
+         <td>192,967</td>
+         <td>12/2/2016</td>
+         <td>1/21/2017</td>
+         <td>Friday, Saturday</td>
+         <td>Gong Yoo, Lee Dong Wook, Yook Sung Jae, Kim Go Eun, Yoo In Na</td>
+       </tr>
+       <tr>
+         <td>34</td>
+         <td>D.P. </td>
+         <td>Action, Military, Drama</td>
+         <td>Military Abuse, Violence, Bromance, Desertion, Harassment, Dark Fiction</td>
+         <td>120</td>
+         <td>207</td>
+         <td>8.8</td>
+         <td>6</td>
+         <td>50</td>
+         <td>39,966</td>
+         <td>8/27/2021</td>
+         <td>-</td>
+         <td>Friday</td>
+         <td>Jung Hae In, Kim Sung Kyun, Koo Kyo Hwan, Son Seok Koo</td>
+       </tr>
+       <tr>
+         <td>35</td>
+         <td>Kingdom </td>
+         <td>Thriller, Historical, Horror, Political</td>
+         <td>Joseon Dynasty, Adapted From A Webtoon, Power Struggle, Gore, Strong</td>
+         <td>129</td>
+         <td>113</td>
+         <td>8.8</td>
+         <td>6</td>
+         <td>51</td>
+         <td>58,560</td>
+         <td>1/25/2019</td>
+         <td>-</td>
+         <td>Friday</td>
+         <td>Joo Ji Hoon, Bae Doo Na, Ryu Seung Ryong, Kim Sung Gyu</td>
+       </tr>
+       <tr>
+         <td>36</td>
+         <td>Weightlifting Fairy Kim Bok Joo </td>
+         <td>Comedy, Romance, Life, Sports</td>
+         <td>Weightlifting, Friends To Lovers, Strong Female Lead, Bantering</td>
+         <td>133</td>
+         <td>3</td>
+         <td>8.8</td>
+         <td>16</td>
+         <td>60</td>
+         <td>162,900</td>
+         <td>11/16/2016</td>
+         <td>1/11/2017</td>
+         <td>Wednesday, Thursday</td>
+         <td>Lee Sung Kyung, Lee Jae Yoon, Nam Joo Hyuk, Kyung Soo Jin</td>
+       </tr>
+       <tr>
+         <td>37</td>
+         <td>Taxi Driver </td>
+         <td>Action, Thriller, Crime, Drama</td>
+         <td>Revenge, Strong Male Lead, Adapted From A Webtoon, Investigation</td>
+         <td>137</td>
+         <td>179</td>
+         <td>8.8</td>
+         <td>16</td>
+         <td>65</td>
+         <td>43,385</td>
+         <td>4/9/2021</td>
+         <td>5/29/2021</td>
+         <td>Friday, Saturday</td>
+         <td>Lee Je Hoon, Kim Eui Sung, Esom, Pyo Ye Jin</td>
+       </tr>
+       <tr>
+         <td>38</td>
+         <td>Six Flying Dragons </td>
+         <td>Action, Historical, Drama, Political</td>
+         <td>Revolution, Power Struggle, Political Intrigue, Sword-fight</td>
+         <td>142</td>
+         <td>490</td>
+         <td>8.8</td>
+         <td>50</td>
+         <td>60</td>
+         <td>22,241</td>
+         <td>10/5/2015</td>
+         <td>3/22/2016</td>
+         <td>Monday, Tuesday</td>
+         <td>Yoo Ah In, Shin Se Kyung, Yoon Kyun Sang, Kim Myung Min, Byun Yo Han, Chun Ho Jin</td>
+       </tr>
+       <tr>
+         <td>39</td>
+         <td>Youth of May </td>
+         <td>Romance, Youth, Drama, Melodrama</td>
+         <td>1980s, Rich Man/Poor Woman, Star Crossed Lovers, Gwangju Uprising, Tearjerker</td>
+         <td>144</td>
+         <td>189</td>
+         <td>8.8</td>
+         <td>12</td>
+         <td>70</td>
+         <td>42,475</td>
+         <td>5/3/2021</td>
+         <td>6/8/2021</td>
+         <td>Monday, Tuesday</td>
+         <td>Lee Do Hyun, Lee Sang Yi, Go Min Si, Geum Sae Rok</td>
+       </tr>
+       <tr>
+         <td>40</td>
+         <td>Life on Mars </td>
+         <td>Action, Mystery, Psychological, Comedy</td>
+         <td>1980s, Police Procedural, Bromance, Calm Male Lead, Smart</td>
+         <td>146</td>
+         <td>394</td>
+         <td>8.8</td>
+         <td>16</td>
+         <td>65</td>
+         <td>26,066</td>
+         <td>6/9/2018</td>
+         <td>8/5/2018</td>
+         <td>Saturday, Sunday</td>
+         <td>Jung Kyung Ho, Go Ah Sung, Noh Jong Hyun, Park Sung Woong, Oh Dae Hwan</td>
+       </tr>
+       <tr>
+         <td>41</td>
+         <td>The Devil Judge </td>
+         <td>Mystery, Law, Crime, Drama</td>
+         <td>Corruption, Tough Past, Hardworking Male Lead, Dystopia</td>
+         <td>149</td>
+         <td>168</td>
+         <td>8.8</td>
+         <td>16</td>
+         <td>75</td>
+         <td>45,384</td>
+         <td>7/3/2021</td>
+         <td>8/22/2021</td>
+         <td>Saturday, Sunday</td>
+         <td>Ji Sung, Park Jin Young, Kim Min Jung, Park Gyu Young</td>
+       </tr>
+       <tr>
+         <td>42</td>
+         <td>Racket Boys </td>
+         <td>Comedy, Life, Drama, Sports</td>
+         <td>Badminton, Sport Club, Rural Life, Working Mom, Tough Female Lead</td>
+         <td>150</td>
+         <td>474</td>
+         <td>8.8</td>
+         <td>16</td>
+         <td>75</td>
+         <td>22,810</td>
+         <td>5/31/2021</td>
+         <td>8/9/2021</td>
+         <td>Monday, Tuesday</td>
+         <td>Kim Sang Kyung, Tang Jun Sang, Choi Hyun Wook, Kim Min Ki, Lee Ji Won, Oh Na Ra, Son Sang</td>
+       </tr>
+       <tr>
+         <td>43</td>
+         <td>Through the Darkness </td>
+         <td>Thriller, Mystery, Crime, Drama</td>
+         <td>Investigation, Murder, Empathic Male Lead, Calm Male Lead, Suspense, 1990s,</td>
+         <td>157</td>
+         <td>814</td>
+         <td>8.8</td>
+         <td>12</td>
+         <td>70</td>
+         <td>14815</td>
+         <td>1/14/2022</td>
+         <td>03-12-2022</td>
+         <td>Friday, Saturday</td>
+         <td>Kim Nam Gil, Kim So Jin, Jin Seon Kyu</td>
+       </tr>
+       <tr>
+         <td>44</td>
+         <td>Beyond Evil </td>
+         <td>Thriller, Mystery, Psychological, Drama</td>
+         <td>Determined Male Lead, Investigation, Suspense, Murder, Trauma, Psychological</td>
+         <td>158</td>
+         <td>176</td>
+         <td>8.8</td>
+         <td>16</td>
+         <td>65</td>
+         <td>43814</td>
+         <td>2/19/2021</td>
+         <td>04-10-2021</td>
+         <td>Friday, Saturday</td>
+         <td>Shin Ha Kyun, Choi Dae Hoon, Choi Sung Eun, Yeo Jin Goo, Kim Shin Rok</td>
+       </tr>
+       <tr>
+         <td>45</td>
+         <td>Missing: The Other Side Season 2 </td>
+         <td>Thriller, Mystery, Supernatural</td>
+         <td>Village Setting, Swindler Male Lead, Cold Case, Hacker Female Lead, Detective</td>
+         <td>163</td>
+         <td>2197</td>
+         <td>8.7</td>
+         <td>14</td>
+         <td>60</td>
+         <td>5034</td>
+         <td>12/19/2022</td>
+         <td>1/31/2023</td>
+         <td>Monday, Tuesday</td>
+         <td>Go Soo, Ahn So Hee, Lee Jung Eun, Heo Joon Ho, Ha Joon, Kim Dong Hwi</td>
+       </tr>
+       <tr>
+         <td>46</td>
+         <td>Hometown Cha-Cha-Cha</td>
+         <td>Comedy, Romance, Life, Drama</td>
+         <td>Nice Male Lead, Nice Female Lead, Cheerful Male Lead, Hardworking Male Lead</td>
+         <td>166</td>
+         <td>50</td>
+         <td>8.7</td>
+         <td>16</td>
+         <td>80</td>
+         <td>81,956</td>
+         <td>8/28/2021</td>
+         <td>10/17/2021</td>
+         <td>Saturday, Sunday</td>
+         <td>Shin Min Ah, Lee Sang Yi, Kim Seon Ho</td>
+       </tr>
+       <tr>
+         <td>47</td>
+         <td>The Penthouse: War in Life</td>
+         <td>Thriller, Mystery, Drama</td>
+         <td>Motherhood, Revenge, Greed, Jealousy, School Bullying</td>
+         <td>170</td>
+         <td>164</td>
+         <td>8.7</td>
+         <td>21</td>
+         <td>85</td>
+         <td>46,029</td>
+         <td>10/26/2020</td>
+         <td>1/5/2021</td>
+         <td>Monday, Tuesday</td>
+         <td>Lee Ji Ah, Eugene, Kim So Yeon</td>
+       </tr>
+       <tr>
+         <td>48</td>
+         <td>Dear My Friends</td>
+         <td>Life, Drama, Melodrama</td>
+         <td>Life Lesson, Mother-Daughter Relationship, Mother-Son Relationship, Sismance</td>
+         <td>173</td>
+         <td>1017</td>
+         <td>8.7</td>
+         <td>16</td>
+         <td>70</td>
+         <td>11,811</td>
+         <td>5/13/2016</td>
+         <td>7/2/2016</td>
+         <td>Friday, Saturday</td>
+         <td>Go Hyun Jung, Na Moon Hee, Park Won Sook, Joo Hyun, Shin Goo, Kim Hye Ja, Go Doo Shim, Youn Yuh Jung...</td>
+       </tr>
+       <tr>
+         <td>49</td>
+         <td>Arthdal Chronicles Part 3: The Prelude to All Legends</td>
+         <td>Historical, Romance, Fantasy, Political</td>
+         <td>Power Struggle, War, Supernatural Power, Strong</td>
+         <td>175</td>
+         <td>589</td>
+         <td>8.7</td>
+         <td>6</td>
+         <td>80</td>
+         <td>19,468</td>
+         <td>9/7/2019</td>
+         <td>9/22/2019</td>
+         <td>Saturday, Sunday</td>
+         <td>Song Joong Ki, Kim Ji Won, Kim Sung Cheol, Jang Dong Gun, Kim Ok Bin</td>
+       </tr>
+       <tr>
+         <td>50</td>
+         <td>Arthdal Chronicles Part 2: The Sky Turning Inside Out, Rising Land</td>
+         <td>Historical, Romance, Fantasy, Political</td>
+         <td>War, Power Struggle, Slavery, Good Twin/Evil Twin, Strong Female Lead, Revenge</td>
+         <td>178</td>
+         <td>498</td>
+         <td>8.7</td>
+         <td>6</td>
+         <td>81</td>
+         <td>21,972</td>
+         <td>6/22/2019</td>
+         <td>7/7/2019</td>
+         <td>Saturday, Sunday</td>
+         <td>Song Joong Ki, Kim Ji Won, Jang Dong Gun, Kim Ok Bin</td>
+       </tr>
+       <tr>
+         <td>51</td>
+         <td>The Guest</td>
+         <td>Thriller, Mystery, Horror, Supernatural</td>
+         <td>Exorcism, Death, Demon, Shamanism, Murder</td>
+         <td>180</td>
+         <td>314</td>
+         <td>8.7</td>
+         <td>16</td>
+         <td>67</td>
+         <td>30,765</td>
+         <td>9/12/2018</td>
+         <td>11/1/2018</td>
+         <td>Wednesday, Thursday</td>
+         <td>Kim Dong Wook, Jung Eun Chae, Kim Jae Wook</td>
+       </tr>
+       <tr>
+          <td>52</td>
+          <td>Defendant</td>
+          <td>Thriller, Mystery, Law, Drama</td>
+          <td>Murder, Amnesia, Wrongfully Accused, Identity Swap, Bromance, Suspense</td>
+          <td>184</td>
+          <td>362</td>
+          <td>8.7</td>
+          <td>18</td>
+          <td>70</td>
+          <td>27,877</td>
+          <td>1/23/2017</td>
+          <td>3/21/2017</td>
+          <td> Monday, Tuesday</td>
+          <td>Ji Sung, Kwon Yu Ri, Uhm Hyun Kyung, Uhm Ki Joon, Oh Chang Seok</td>
+        </tr>
+        <tr>
+          <td>53</td>
+          <td>Dr. Romantic Season 2</td>
+          <td>Romance, Drama, Medical, Melodrama</td>
+          <td>Healing, Hardworking Female Lead, Character Development, Love/Hate</td>
+          <td>189</td>
+          <td>187</td>
+          <td>8.7</td>
+          <td>16</td>
+          <td>70</td>
+          <td>42,768</td>
+          <td>1/6/2020</td>
+          <td>2/25/2020</td>
+          <td>Monday, Tuesday</td>
+          <td>Han Seok Kyu, Lee Sung Kyung, Ahn Hyo Seop, Kim Joo Heon</td>
+        </tr>
+        <tr>
+          <td>54</td>
+          <td>While You Were Sleeping</td>
+          <td>Mystery, Romance, Drama, Fantasy</td>
+          <td>Precognition, Nice Male Lead, Murder, Tragic Past, Steamy Kiss</td>
+          <td>190</td>
+          <td>11</td>
+          <td>8.7</td>
+          <td>32</td>
+          <td>30</td>
+          <td>136,482</td>
+          <td>9/27/2017</td>
+          <td>11/16/2017</td>
+          <td>Wednesday, Thursday</td>
+          <td>Bae Suzy, Jung Hae In, Lee Jong Suk, Lee Sang Yeob</td>
+        </tr>
+        <tr>
+          <td>55</td>
+          <td>The Penthouse Season 2: War in Life</td>
+          <td>Thriller, Mystery, Drama</td>
+          <td>Revenge, Corruption, High Class Society, Greed, Murder, Rich Male Lead</td>
+          <td>191</td>
+          <td>317</td>
+          <td>8.7</td>
+          <td>13</td>
+          <td>75</td>
+          <td>30,242</td>
+          <td>2/19/2021</td>
+          <td>4/2/2021</td>
+          <td>Friday, Saturday</td>
+          <td>Kim So Yeon, Lee Ji Ah, Eugene</td>
+        </tr>
+        <tr>
+          <td>56</td>
+          <td>Our Beloved Summer</td>
+          <td>Romance, Life, Youth, Drama</td>
+          <td>Lovers Reunited, High School Sweethearts, First Love, Healing</td>
+          <td>195</td>
+          <td>89</td>
+          <td>8.7</td>
+          <td>16</td>
+          <td>60</td>
+          <td>65,303</td>
+          <td>12/6/2021</td>
+          <td>1/25/2022</td>
+          <td>Monday, Tuesday</td>
+          <td>Choi Woo Shik, Kim Sung Cheol, Kim Da Mi, Roh Jeong Eui</td>
+        </tr>
+        <tr>
+          <td>57</td>
+          <td>Our Blues</td>
+          <td>Romance, Life, Drama, Melodrama</td>
+          <td>Multiple Mains, Anthology, Island Setting, Middle-Aged Female Lead</td>
+          <td>198</td>
+          <td>363</td>
+          <td>8.7</td>
+          <td>20</td>
+          <td>70</td>
+          <td>27,862</td>
+          <td>4/9/2022</td>
+          <td>6/12/2022</td>
+          <td>Saturday, Sunday</td>
+          <td>Lee Byung Hun, Cha Seung Won, Uhm Jung Hwa, Kim Woo Bin, Go Doo Shim, Choi Young Joon, Bae Hyun Sung...</td>
+        </tr>
+        <tr>
+          <td>58</td>
+          <td>Sweet Home</td>
+          <td>Action, Horror, Drama, Sci-Fi</td>
+          <td>Monsters, Gore, Survival, Character Development, Adapted From A Webtoon</td>
+          <td>201</td>
+          <td>63</td>
+          <td>8.7</td>
+          <td>10</td>
+          <td>52</td>
+          <td>75,786</td>
+          <td>12/18/2020</td>
+          <td>-</td>
+          <td>Friday</td>
+          <td>Song Kang, Lee Si Young, Kim Nam Hee, Park Gyu Young, Kim Gab Soo, Lee Jin Wook, Lee Do Hyun, Go Min...</td>
+        </tr>
+        <tr>
+          <td>59</td>
+          <td>18 Again</td>
+          <td>Romance, Life, Drama, Fantasy</td>
+          <td>Second Chance, First Love, Father-Son Relationship, Hardworking Female Lead</td>
+          <td>203</td>
+          <td>122</td>
+          <td>8.7</td>
+          <td>16</td>
+          <td>70</td>
+          <td>55,291</td>
+          <td>9/21/2020</td>
+          <td>11/10/2020</td>
+          <td>Monday, Tuesday</td>
+          <td>Kim Ha Neul, Lee Do Hyun, Yoon Sang Hyun</td>
+        </tr>
+        <tr>
+          <td>60</td>
+          <td>Moon Lovers: Scarlet Heart Ryeo</td>
+          <td>Historical, Romance, Fantasy, Melodrama</td>
+          <td>Goryeo Dynasty, Badass Male Lead, Power Struggle, Jealousy, Sibling Rivalry</td>
+          <td>208</td>
+          <td>16</td>
+          <td>8.7</td>
+          <td>20</td>
+          <td>60</td>
+          <td>122,991</td>
+          <td>8/29/2016</td>
+          <td>11/1/2016</td>
+          <td>Monday, Tuesday</td>
+          <td>Lee Joon Gi, Kang Ha Neul, IU</td>
+        </tr>
+        <tr>
+          <td>61</td>
+          <td>Kill Me, Heal Me</td>
+          <td>Psychological, Comedy, Romance, Drama</td>
+          <td>Dissociative Identity Disorder, Trauma, Boss-Employee Relationship, Rich Male Lead</td>
+          <td>211</td>
+          <td>27</td>
+          <td>8.7</td>
+          <td>20</td>
+          <td>62</td>
+          <td>99,839</td>
+          <td>1/7/2015</td>
+          <td>3/12/2015</td>
+          <td>Wednesday, Thursday</td>
+          <td>Ji Sung, Park Seo Joon, Oh Min Suk, Hwang Jung Eum, Kim Yoo Ri</td>
+        </tr>
+        <tr>
+          <td>62</td>
+          <td>Partners for Justice Season 2</td>
+          <td>Mystery, Law, Drama, Medical</td>
+          <td>Forensic Science, Forensic Medical Examiner Male Lead, Prosecutor</td>
+          <td>213</td>
+          <td>1394</td>
+          <td>8.7</td>
+          <td>32</td>
+          <td>35</td>
+          <td>8,549</td>
+          <td>6/3/2019</td>
+          <td>7/29/2019</td>
+          <td>Monday, Tuesday</td>
+          <td>Jung Jae Young, Oh Man Suk, Jung Yoo Mi, Noh Min Woo</td>
+        </tr>
+        <tr>
+          <td>63</td>
+          <td>Misaeng: Incomplete Life</td>
+          <td>Business, Life, Drama</td>
+          <td>Office Worker, Workplace Abuse, Teamwork, Adapted From A Webtoon</td>
+          <td>215</td>
+          <td>329</td>
+          <td>8.7</td>
+          <td>20</td>
+          <td>80</td>
+          <td>29,448</td>
+          <td> 10/17/2014</td>
+          <td>12/20/2014</td>
+          <td>Friday, Saturday</td>
+          <td>Yim Si Wan, Kang So Ra, Byun Yo Han, Lee Sung Min, Kang Ha Neul, Kim Dae Myung</td>
+        </tr>
+        <tr>
+          <td>64</td>
+          <td>A Business Proposal</td>
+          <td> Proposal,Comedy, Romance, Drama</td>
+          <td>Boss-Employee Relationship, Double Identity, Fake Identity</td>
+          <td>218</td>
+          <td>28</td>
+          <td>8.7</td>
+          <td>12</td>
+          <td>60</td>
+          <td>99,264</td>
+          <td>2/28/2022</td>
+          <td>4/5/2022</td>
+          <td>Monday, Tuesday</td>
+          <td>Ahn Hyo Seop, Kim Min Gue, Kim Se Jeong, Seol In Ah</td>
+        </tr>
+        <tr>
+          <td>65</td>
+          <td>The Fiery Priest</td>
+          <td>Action, Mystery, Comedy, Crime</td>
+          <td>Badass Male Lead, Eccentric Male Lead, Sassy Female Lead, Bromance</td>
+          <td>220</td>
+          <td>408</td>
+          <td>8.7</td>
+          <td>40</td>
+          <td>35</td>
+          <td>25,291</td>
+          <td>2/15/2019</td>
+          <td>4/20/2019</td>
+          <td>Friday, Saturday</td>
+          <td>Kim Nam Gil, Lee Ha Nee, Geum Sae Rok, Kim Sung Kyun, Go Jun</td>
+        </tr>
+        <tr>
+          <td>66</td>
+          <td>My Name</td>
+          <td>Action, Thriller, Mystery, Crime</td>
+          <td>Blood, Revenge, Lying, Murder, Double Identity, Antihero, Hidden</td>
+          <td>221</td>
+          <td>87</td>
+          <td>8.7</td>
+          <td>8</td>
+          <td>50</td>
+          <td>65,658</td>
+          <td>10/15/2021</td>
+          <td>-</td>
+          <td>Friday</td>
+          <td>Han So Hee, Ahn Bo Hyun, Park Hee Soon</td>
+        </tr>
+        <tr>
+          <td>67</td>
+          <td>Chicago Typewriter</td>
+          <td>Comedy, Romance, Supernatural, Political</td>
+          <td>Reincarnation, Hardworking Male Lead, Hardworking</td>
+          <td>222</td>
+          <td>120</td>
+          <td>8.7</td>
+          <td>16</td>
+          <td>70</td>
+          <td>56,141</td>
+          <td>4/7/2017</td>
+          <td>6/3/2017</td>
+          <td>Friday, Saturday</td>
+          <td>Yoo Ah In, Go Kyung Pyo, Im Soo Jung, Kwak Shi Yang</td>
+        </tr>
+        <tr>
+          <td>68</td>
+          <td>Hot Stove League</td>
+          <td>Drama, Sports, Melodrama</td>
+          <td>Hardworking Female Lead, Baseball, Hardworking Male Lead</td>
+          <td>224</td>
+          <td>526</td>
+          <td>8.7</td>
+          <td>16</td>
+          <td>62</td>
+          <td>20,925</td>
+          <td>12/13/2019</td>
+          <td>2/14/2020</td>
+          <td>Friday, Saturday</td>
+          <td>Namkoong Min, Cho Byeong Kyu, Park Eun Bin, Oh Jung Se</td>
+        </tr>
+        <tr>
+          <td>69</td>
+          <td>Strong Woman Do Bong Soon</td>
+          <td>Action, Comedy, Romance, Supernatural</td>
+          <td>Strong Female Lead, Female Lead Action Scenes, Superhuman</td>
+          <td>225</td>
+          <td>2</td>
+          <td>8.7</td>
+          <td>16</td>
+          <td>67</td>
+          <td>179,271</td>
+          <td>2/24/2017</td>
+          <td>4/15/2017</td>
+          <td>Friday, Saturday</td>
+          <td>Park Bo Young, Kim Ji Soo, Park Hyung Sik</td>
+        </tr>
+        <tr>
+          <td>70</td>
+          <td>Dr. Romantic</td>
+          <td>Romance, Drama, Medical</td>
+          <td>Strong Male Lead, Smart Male Lead, Hardworking Female Lead</td>
+          <td>230</td>
+          <td>127</td>
+          <td>8.7</td>
+          <td>20</td>
+          <td>60</td>
+          <td>54,423</td>
+          <td>11/7/2016</td>
+          <td>1/16/2017</td>
+          <td>Monday, Tuesday</td>
+          <td>Han Seok Kyu, Seo Hyun Jin, Yoo Yeon Seok</td>
+        </tr>
+        <tr>
+          <td>71</td>
+          <td>Strangers from Hell</td>
+          <td>Thriller, Horror, Psychological, Drama</td>
+          <td>Adapted From A Webtoon, Murder, Gaslighting, Mental Torment, Mental Illness, Trauma</td>
+          <td>236</td>
+          <td>126</td>
+          <td>8.7</td>
+          <td>10</td>
+          <td>60</td>
+          <td>54,461</td>
+          <td>8/31/2019</td>
+          <td>10/6/2019</td>
+          <td>Saturday, Sunday</td>
+          <td>Yim Si Wan, Lee Dong Wook</td>
+        </tr>
+        <tr>
+          <td>72</td>
+          <td>Love to Hate You</td>
+          <td>Comedy, Law, Romance</td>
+          <td>Badass Female Lead, Enemies To Lovers, Social Issues, Actor</td>
+          <td>241</td>
+          <td>471</td>
+          <td>8.7</td>
+          <td>10</td>
+          <td>52</td>
+          <td>22,953</td>
+          <td>2/10/2023</td>
+          <td>-</td>
+          <td>Friday</td>
+          <td>Kim Ok Bin, Kim Ji Hoon, Yoo Teo, Go Won Hee</td>
+        </tr>
+        <tr>
+          <td>73</td>
+          <td>Live</td>
+          <td>Comedy, Romance, Life, Drama</td>
+          <td>Teamwork, Violence, Strong Female Lead, Police Officer</td>
+          <td>246</td>
+          <td>544</td>
+          <td>8.7</td>
+          <td>18</td>
+          <td>75</td>
+          <td>20,652</td>
+          <td>3/10/2018</td>
+          <td>5/6/2018</td>
+          <td>Saturday, Sunday</td>
+          <td>Lee Kwang Soo, Bae Sung Woo, Jung Yu Mi, Bae Jong Ok</td>
+        </tr>
+        <tr>
+          <td>74</td>
+          <td>The King of Pigs</td>
+          <td>Thriller, Mystery, Drama</td>
+          <td>School Bullying, Detective Male Lead, School Violence, Flashback</td>
+          <td>256</td>
+          <td>1463</td>
+          <td>8.6</td>
+          <td>12</td>
+          <td>55</td>
+          <td>8,203</td>
+          <td>3/18/2022</td>
+          <td>4/22/2022</td>
+          <td>Friday</td>
+          <td>Kim Dong Wook, Chae Jung An, Kim Sung Gyu</td>
+        </tr>
+        <tr>
+          <td>75</td>
+          <td>Jewel in the Palace</td>
+          <td>Food, Historical, Romance, Medical</td>
+          <td>Strong Female Lead, Cooking, Royal Rules And Etiquette, Joseon Dynasty</td>
+          <td>260</td>
+          <td>724</td>
+          <td>8.6</td>
+          <td>54</td>
+          <td>65</td>
+          <td>16,545</td>
+          <td>9/15/2003</td>
+          <td>3/23/2004</td>
+          <td>Monday, Tuesday</td>
+          <td>Lee Young Ae, Hong Ri Na, Ji Jin Hee, Im Ho</td>
+        </tr>
+        <tr>
+          <td>76</td>
+          <td>Tunnel</td>
+          <td>Thriller, Mystery, Sci-Fi, Fantasy</td>
+          <td>Time Travel, Murder, Bromance, Hardworking Male Lead, Hidden Identity</td>
+          <td>269</td>
+          <td>231</td>
+          <td>8.6</td>
+          <td>16</td>
+          <td>64</td>
+          <td>37,763</td>
+          <td>3/25/2017</td>
+          <td>5/21/2017</td>
+          <td>Saturday, Sunday</td>
+          <td>Choi Jin Hyuk, Lee Yoo Young, Yoon Hyun Min</td>
+        </tr>
+        <tr>
+          <td>77</td>
+          <td>My Liberation Notes</td>
+          <td>Romance, Life, Drama, Melodrama</td>
+          <td>Slow Burn Story, Introverted Female Lead, Loneliness</td>
+          <td>280</td>
+          <td>336</td>
+          <td>8.6</td>
+          <td>16</td>
+          <td>67</td>
+          <td>29,182</td>
+          <td>4/9/2022</td>
+          <td>5/29/2022</td>
+          <td>Saturday, Sunday</td>
+          <td>Lee Min Ki, Son Seok Koo, Kim Ji Won, Lee El</td>
+        </tr>
+        <tr>
+          <td>78</td>
+          <td>Descendants of the Sun</td>
+          <td>Action, Comedy, Romance, Melodrama</td>
+          <td>Hardworking Female Lead, Multiple Couples, Bromance</td>
+          <td>286</td>
+          <td>4</td>
+          <td>8.6</td>
+          <td>16</td>
+          <td>60</td>
+          <td>162,815</td>
+          <td>2/24/2016</td>
+          <td>4/14/2016</td>
+          <td>Wednesday, Thursday</td>
+          <td>Song Joong Ki, Jin Goo, Song Hye Kyo, Kim Ji Won</td>
+        </tr>
+        <tr>
+          <td>79</td>
+          <td>Hotel del Luna</td>
+          <td>Horror, Comedy, Romance, Fantasy</td>
+          <td>Boss-Employee Relationship, Strong Female Lead, Ghost, Smart Female Lead</td>
+          <td>287</td>
+          <td>13</td>
+          <td>8.6</td>
+          <td>16</td>
+          <td>80</td>
+          <td>134,694</td>
+          <td>7/13/2019</td>
+          <td>9/1/2019</td>
+          <td>Saturday, Sunday</td>
+          <td>IU, Yeo Jin Goo</td>
+        </tr>
+        <tr>
+          <td>80</td>
+          <td>Missing: The Other Side</td>
+          <td>Thriller, Mystery, Supernatural</td>
+          <td>Ghost-seeing Male Lead, Spirit, Missing Person, Bromance</td>
+          <td>292</td>
+          <td>828</td>
+          <td>8.6</td>
+          <td>12</td>
+          <td>70</td>
+          <td>162,815</td>
+          <td>8/29/2020</td>
+          <td>10/11/2020</td>
+          <td>Saturday, Sunday</td>
+          <td>Go Soo, Ahn So Hee, Seo Eun Soo, Heo Joon Ho, Ha Joon, Song Geon Hee</td>
+        </tr>
+        <tr>
+          <td>81</td>
+          <td>Law School</td>
+          <td>Mystery, Law, Crime, Drama</td>
+          <td>Smart Male Lead, Student, University, Death, Hardworking</td>
+          <td>297</td>
+          <td>200</td>
+          <td>8.6</td>
+          <td>16</td>
+          <td>65</td>
+          <td>134,694</td>
+          <td>4/14/2021</td>
+          <td>6/9/2021</td>
+          <td>Wednesday, Thursday</td>
+          <td>Kim Myung Min, Ryu Hye Young, Kim Bum, Lee Jung Eun</td>
+        </tr>
+        <tr>
+          <td>82</td>
+          <td>The First Responders</td>
+          <td>Action, Thriller, Mystery, Drama</td>
+          <td>Teamwork, Firefighter Male Lead, Investigation, Suspense</td>
+          <td>305</td>
+          <td>1167</td>
+          <td>8.6</td>
+          <td>12</td>
+          <td>70</td>
+          <td>14,502</td>
+          <td>11/12/2022</td>
+          <td>12/30/2022</td>
+          <td>Friday, Saturday</td>
+          <td>Kim Rae Won, Gong Seung Yeon, Son Ho Jun</td>
+        </tr>
+        <tr>
+          <td>83</td>
+          <td>It's Okay, That's Love</td>
+          <td>Psychological, Comedy, Romance, Drama</td>
+          <td>Strong Female Lead, Psychiatry, Trauma, Healing, Adult Romance</td>
+          <td>308</td>
+          <td>53</td>
+          <td>8.6</td>
+          <td>16</td>
+          <td>60</td>
+          <td>80,709</td>
+          <td>7/23/2014</td>
+          <td>9/11/2014</td>
+          <td>Wednesday, Thursday</td>
+          <td>Zo In Sung, Gong Hyo Jin</td>
+        </tr>
+        <tr>
+          <td>84</td>
+          <td>Eulachacha Waikiki</td>
+          <td>Comedy, Romance, Life, Drama</td>
+          <td>Bromance, Friends To Lovers, Motherhood, Cohabitation, Babysitting, Multiple</td>
+          <td>309</td>
+          <td>107</td>
+          <td>8.6</td>
+          <td>20</td>
+          <td>65</td>
+          <td>59,433</td>
+          <td>2/5/2018</td>
+          <td>4/17/2018</td>
+          <td>Monday, Tuesday</td>
+          <td>Kim Jung Hyun, Son Seung Won, Go Won Hee, Lee Yi Kyung, Jung In Sun, Lee Joo Woo</td>
+        </tr>
+        <tr>
+          <td>85</td>
+          <td>Ghost Doctor</td>
+          <td>Comedy, Medical, Fantasy, Supernatural</td>
+          <td>Doctor Male Lead, Spirit, Bromance, Ghost, Spirit Possession</td>
+          <td>314</td>
+          <td>360</td>
+          <td>8.6</td>
+          <td>16</td>
+          <td>75</td>
+          <td>27,961</td>
+          <td>1/3/2022</td>
+          <td>2/22/2022</td>
+          <td>Monday, Tuesday</td>
+          <td>Rain, Uee, Kim Bum, Son Na Eun</td>
+        </tr>
+        <tr>
+          <td>86</td>
+          <td>Children of Nobody</td>
+          <td>Thriller, Mystery, Psychological, Drama</td>
+          <td>Trauma, Child Abuse, Smart Female Lead, Murder, Tragic Past, Psychiatry</td>
+          <td>316</td>
+          <td>788</td>
+          <td>8.6</td>
+          <td>32</td>
+          <td>30</td>
+          <td>15,242</td>
+          <td>11/21/2018</td>
+          <td>1/16/2019</td>
+          <td>Wednesday, Thursday</td>
+          <td>Kim Sun Ah, Nam Gyu Ri, Lee Yi Kyung, Cha Hak Yeon</td>
+        </tr>
+        <tr>
+          <td>87</td>
+          <td>Reborn Rich</td>
+          <td>Business, Drama, Fantasy, Political</td>
+          <td>Time Travel, Transmigration, Power Struggle, Corruption, Family</td>
+          <td>310</td>
+          <td>306</td>
+          <td>8.6</td>
+          <td>16</td>
+          <td>75</td>
+          <td>31,307</td>
+          <td>11/18/2022</td>
+          <td>12/25/2022</td>
+          <td>Friday, Saturday, Sunday</td>
+          <td>Song Joong Ki, Shin Hyun Bin, Lee Sung Min</td>
+        </tr>
+        <tr>
+          <td>88</td>
+          <td>Good Manager</td>
+          <td>Business, Comedy, Crime, Drama</td>
+          <td>Eccentric Male Lead, Corruption, Social Satire, Bromance, Smart Male Lead</td>
+          <td>322</td>
+          <td>272</td>
+          <td>8.6</td>
+          <td>20</td>
+          <td>60</td>
+          <td>33,728</td>
+          <td>1/25/2017</td>
+          <td>3/30/2017</td>
+          <td>Wednesday, Thursday</td>
+          <td>Namkoong Min, Lee Jun Ho, Nam Sang Mi, Jung Hye Sung</td>
+        </tr>
+        <tr>
+          <td>89</td>
+          <td>Once Again</td>
+          <td>Comedy, Romance, Life, Drama</td>
+          <td>Multiple Couples, Multiple Mains, Love/Hate Relationship, Muteness</td>
+          <td>329</td>
+          <td>994</td>
+          <td>8.6</td>
+          <td>100</td>
+          <td>36</td>
+          <td>12,135</td>
+          <td>3/28/2020</td>
+          <td>9/13/2020</td>
+          <td>Saturday, Sunday</td>
+          <td>Chun Ho Jin, Lee Jung Eun, Lee Min Jung, Oh Yoon Ah, Cha Hwa Yun, Oh Dae Hwan</td>
+        </tr>
+        <tr>
+          <td>90</td>
+          <td>The Bridal Mask</td>
+          <td>Action, Historical, Romance, Political</td>
+          <td>Japanese Colonial Rule, Hidden Identity, Rebellion, Revenge, Love Triangle</td>
+          <td>336</td>
+          <td>361</td>
+          <td>8.6</td>
+          <td>28</td>
+          <td>65</td>
+          <td>27,881</td>
+          <td>5/30/2012</td>
+          <td>9/6/2012</td>
+          <td>Wednesday, Thursday</td>
+          <td>Joo Won, Park Ki Woong, Jin Se Yeon, Han Chae Ah</td>
+        </tr>
+        <tr>
+          <td>91</td>
+          <td>Empress Ki</td>
+          <td>Historical, Romance, Melodrama, Political</td>
+          <td>Smart Female Lead, Strong Female Lead, Power Struggle, Possessive Male Lead, Love Triangle</td>
+          <td>338</td>
+          <td>229</td>
+          <td>8.6</td>
+          <td>51</td>
+          <td>65</td>
+          <td>38,050</td>
+          <td>10/28/2013</td>
+          <td>4/29/2014</td>
+          <td>Monday, Tuesday</td>
+          <td>Ha Ji Won, Joo Jin Mo, Ji Chang Wook, Baek Jin Hee</td>
+        </tr>
+        <tr>
+          <td>92</td>
+          <td>Money Heist: Korea - Joint Economic Area - Part 2</td>
+          <td>Action, Thriller, Mystery, Crime</td>
+          <td>Heist, Hostage Situation, Suspense, Multiple Mains, Violence, Non-MDL Remake</td>
+          <td>340</td>
+          <td>1260</td>
+          <td>8.6</td>
+          <td>6</td>
+          <td>60</td>
+          <td>9,505</td>
+          <td>12/9/2022</td>
+          <td>-</td>
+          <td>Friday</td>
+          <td>Yoo Ji Tae, Jeon Jong Seo, Kim Ji Hoon, Lee Hyun Woo, Lee Gyu Ho, Kim Yoon Jin</td>
+        </tr>
+        <tr>
+          <td>93</td>
+          <td>Go Back Couple</td>
+          <td>Comedy, Romance, Life, Fantasy</td>
+          <td>Time Travel, Love/Hate Relationship, Mother-Daughter Relationship</td>
+          <td>341</td>
+          <td>232</td>
+          <td>8.6</td>
+          <td>12</td>
+          <td>70</td>
+          <td>9,505</td>
+          <td>10/13/2017</td>
+          <td>11/18/2017</td>
+          <td>Friday, Saturday</td>
+          <td>Jang Na Ra, Son Ho Jun</td>
+        </tr>
+        <tr>
+          <td>94</td>
+          <td>My Father Is Strange</td>
+          <td>Comedy, Romance, Drama</td>
+          <td>Family Secret, Eccentric Female Lead, Fake Incest, Multiple</td>
+          <td>344</td>
+          <td>372</td>
+          <td>8.6</td>
+          <td>52</td>
+          <td>66</td>
+          <td>27,397</td>
+          <td>3/4/2017</td>
+          <td>8/27/2017</td>
+          <td>Saturday, Sunday</td>
+          <td>Kim Yeong Cheol, Ryu Soo Young, Lee Joon, Kim Hae Sook, Lee Yoo Ri, Jung So Min</td>
+        </tr>
+        <tr>
+          <td>95</td>
+          <td>Juvenile Justice</td>
+          <td>Law, Drama</td>
+          <td>Hardworking Female Lead, Strong Female Lead, Tough Female Lead</td>
+          <td>345</td>
+          <td>476</td>
+          <td>8.6</td>
+          <td>10</td>
+          <td>62</td>
+          <td>22,768</td>
+          <td>2/25/2022</td>
+          <td>-</td>
+          <td>Friday</td>
+          <td>Kim Hye Soo, Lee Sung Min, Kim Mu Yeol, Lee Jung Eun</td>
+        </tr>
+        <tr>
+          <td>96</td>
+          <td>Big Mouth</td>
+          <td>Thriller, Mystery, Law, Drama</td>
+          <td>Suspense, Death, Investigation, Lawyer Male Lead, Murder, Brave Female</td>
+          <td>350</td>
+          <td>184</td>
+          <td>8.6</td>
+          <td>16</td>
+          <td>71</td>
+          <td>43,057</td>
+          <td>7/29/2022</td>
+          <td>9/17/2022</td>
+          <td>Friday, Saturday</td>
+          <td>Lee Jong Suk, Kim Joo Heon, Im Yoon Ah</td>
+        </tr>
+        <tr>
+          <td>97</td>
+          <td>Stranger Season 2</td>
+          <td>Thriller, Mystery, Law, Drama</td>
+          <td>Corruption, Calm Male Lead, Smart Male Lead, Suspense, Emotional</td>
+          <td>361</td>
+          <td>669</td>
+          <td>8.6</td>
+          <td>16</td>
+          <td>62</td>
+          <td>17,630</td>
+          <td>8/15/2020</td>
+          <td>10/4/2020</td>
+          <td>Saturday, Sunday</td>
+          <td>Cho Seung Woo, Jeon Hye Jin, Lee Joon Hyuk, Bae Doo Na</td>
+        </tr>
+        <tr>
+          <td>98</td>
+          <td>Designated Survivor: 60 Days</td>
+          <td>Thriller, Mystery, Drama, Political</td>
+          <td>Blue House, Power Struggle, Conspiracy, Lying, Terrorism, Social</td>
+          <td>336</td>
+          <td>914</td>
+          <td>8.6</td>
+          <td>16</td>
+          <td>74</td>
+          <td>13,475</td>
+          <td>7/1/2019</td>
+          <td>8/20/2019</td>
+          <td>Monday, Tuesday</td>
+          <td>Ji Jin Hee, Kang Han Na, Lee Joon Hyuk, Son Seok Koo, Heo Joon Ho</td>
+        </tr>
+        <tr>
+          <td>99</td>
+          <td>Cruel City</td>
+          <td>Action, Thriller, Romance, Crime</td>
+          <td>Badass Male Lead, Gang, Bromance, Strong Female Lead, Strong Male Lead</td>
+          <td>368</td>
+          <td>442</td>
+          <td>8.6</td>
+          <td>20</td>
+          <td>60</td>
+          <td>23,663</td>
+          <td>5/27/2013</td>
+          <td>7/30/2013</td>
+          <td>Monday, Tuesday</td>
+          <td>Jung Kyung Ho, Lee Jae Yoon, Kim Yoo Mi, Nam Gyu Ri, Son Chang Min</td>
+        </tr>
+        <tr>
+          <td>100</td>
+          <td>Little Women</td>
+          <td>Action, Thriller, Mystery, Drama</td>
+          <td>Outcast Female Lead, Female Centered Plot, Sisters' Relationship, Poor</td>
+          <td>367</td>
+          <td>244</td>
+          <td>8.6</td>
+          <td>12</td>
+          <td>75</td>
+          <td>36,504</td>
+          <td>9/3/2022</td>
+          <td>10/9/2022</td>
+          <td>Saturday, Sunday</td>
+          <td>Kim Go Eun, Park Ji Hoo, Nam Ji Hyun, Wi Ha Joon</td>
+        </tr>
+    </tbody>
+  </table>
+</body>
+</html>
+
+
+     
